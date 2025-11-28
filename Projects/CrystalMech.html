@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Mech - Ewout Van Gasse</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #eee;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #222;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .header-text .role {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #7cf;
+        }
+
+        .header-icons {
+            margin: 15px 0;
+            display: flex;
+            gap: 20px;
+        }
+
+            .header-icons a {
+                color: #7cf;
+                transition: transform 0.2s;
+                display: inline-block;
+            }
+
+                .header-icons a:hover {
+                    transform: scale(1.2);
+                }
+                .header-icons a.mail {
+                    margin-top: 4px;
+                }
+
+        .back-button {
+            background-color: transparent;
+            color: #7cf;
+            border: 2px solid #7cf;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s, color 0.2s;
+            margin-top: 10px;
+        }
+
+            .back-button:hover {
+                transform: scale(1.05);
+                background-color: #7cf;
+                color: #111;
+            }
+
+        .project-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .project-splash {
+            width: 100%;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #7cf;
+            margin-bottom: 15px;
+            margin-left: 80px;
+            font-size: 1.8rem;
+            text-align: left;
+        }
+
+        p, ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .trailer iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+
+        .resume-button {
+            background-color: transparent;
+            color: #7cf;
+            padding: 6px 14px;
+            border: 2px solid #7cf;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s, color 0.2s;
+        }
+
+            .resume-button:hover {
+                transform: scale(1.05);
+                background-color: #7cf;
+                color: #111;
+            }
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px 20px;
+        }
+        a {
+            color: #9ecbff;
+        }
+
+            a:hover {
+                color: #cfe6ff;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../Resources/me.png" alt="Ewout Van Gasse" class="profile-pic">
+            <div class="header-text">
+                <h1>Ewout Van Gasse</h1>
+            </div>
+            <div class="header-icons">
+                <a href="mailto:ewout.vangasse@hotmail.com" class="mail" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2 4v16h20V4H2zm18 2v.511l-8 5.333-8-5.333V6h16zM4 18V8.489l8 5.333 8-5.333V18H4z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ewout-van-gasse/" target="_blank" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.02 8.99h4.96V24H.02V8.99zM8.93 8.99h4.76v2.04h.07c.66-1.25 2.27-2.57 4.66-2.57 4.98 0 5.9 3.28 5.9 7.54V24h-4.96v-7.84c0-1.87-.03-4.28-2.6-4.28-2.6 0-3 2.04-3 4.14V24H8.93V8.99z" />
+                    </svg>
+                </a>
+                <a href="../Resources/resume.pdf" class="resume-button" target="_blank">Resume</a>
+            </div>
+        </div>
+        <a href="../index.html" class="back-button">← Back to Portfolio</a>
+    </header>
+
+    <main class="project-page">
+        <section class="splash">
+            <img src="../Resources/Crystalmech-splash.png" alt="Crystal Mech Splash" class="project-splash">
+        </section>
+
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>
+                Crystal Mech is a Top-Down Sci-Fi-Magic Bullet Hell. It's designed as a co-operative game for 1-4 players, created by a team of 8 people [4 programmers, 4 artists] for the annual DAE Crea-Week Game Jam. This Game Jam started on Wednesday-morning, the 2nd of May 2018, and lasted until Friday the 4th of May at noon, so all in all that's 2 and a half days of work! The theme of the game jam was "Magic & 3 Rules".
+            </p>
+        </section>
+
+        <section class="technical-details">
+            <h2>Technical Details</h2>
+            <p><strong>Engine:</strong> Unreal Engine 4 (Blueprinting)</p>
+            <p><strong>Multiplayer Solution:</strong> Local</p>
+            <p><strong>Platform:</strong> PC (<a href="https://gvanwaesberg.itch.io/crystal-mech" target="_blank">Check it out on Itch.io</a>)</p>
+        </section>
+
+        <section class="my-role">
+            <h2>My Role</h2>
+            <ul>
+                <li>Good practice on iterative work within a pretty big team without any central managers.</li>
+                <li>Help with fast decision making on both design, gameplay and delegating work.</li>
+                <li>Implement shooting mechanics and the bullet reflection mechanics.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Ewout Van Gasse</p>
+        </div>
+    </footer>
+</body>
+
+</html>

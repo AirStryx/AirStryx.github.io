@@ -88,84 +88,91 @@
             width: 100%;
             border-radius: 8px;
         }
-        .role 
-        {
+        .role {
             margin: 5px 0 0;
             font-size: 1.1rem;
             font-weight: normal;
-            color: #bbb;
-        }
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            justify-items: center;
-            padding: 20px 0;
-        }
-
-        .project-card img {
-            width: 500px;
-            height: 280px;
-            object-fit: cover;
-            object-position: top center;
-            border-radius: 12px;
-            cursor: pointer;
-            display: block;
-            transition: transform 0.2s;
-        }
-
-            .project-card img:hover {
-                transform: scale(1.03);
-            }
-
-        @media (max-width: 650px) {
-            .projects-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        h2.personal-section {
-            margin-top: 80px; /* increase this value for more space */
-        }
-
-        footer {
-            background: #222;
-            color: #ccc;
-            text-align: center;
-            padding: 15px 20px;
-        }
-
-        .header-icons {
-            margin: 15px 0;
-            display: flex;
-            gap: 20px;
-        }
-
-            .header-icons a {
-                color: #7cf;
-                transition: transform 0.2s;
-                display: inline-block;
-            }
-
-                .header-icons a:hover {
-                    transform: scale(1.2);
-                }
-        .resume-button {
-            background-color: transparent;
             color: #7cf;
-            padding: 6px 14px;
-            border: 2px solid #7cf;
-            border-radius: 6px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: transform 0.2s, background-color 0.2s, color 0.2s;
         }
 
-        .resume-button:hover {
-            transform: scale(1.05);
-            background-color: #7cf;
-            color: #111;
-        }
+
+            .projects-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                justify-items: center;
+                padding: 20px 0;
+            }
+
+            .project-card img {
+                width: 500px;
+                height: 280px;
+                object-fit: cover;
+                object-position: top center;
+                border-radius: 12px;
+                cursor: pointer;
+                display: block;
+                transition: transform 0.2s;
+            }
+
+                .project-card img:hover {
+                    transform: scale(1.03);
+                }
+
+            @media (max-width: 650px) 
+            {
+                .projects-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            h2.personal-section {
+                margin-top: 80px;
+            }
+
+            footer {
+                background: #222;
+                color: #ccc;
+                text-align: center;
+                padding: 15px 20px;
+            }
+
+            .header-icons {
+                margin: 15px 0;
+                display: flex;
+                gap: 20px;
+            }
+
+                .header-icons a {
+                    color: #7cf;
+                    transition: transform 0.2s;
+                    display: inline-block;
+                }
+
+                    .header-icons a:hover {
+                        transform: scale(1.2);
+                    }
+
+                    .header-icons a.mail {
+                        margin-top: 4px;
+                    }
+
+            .resume-button {
+                background-color: transparent;
+                color: #7cf;
+                padding: 6px 14px;
+                border: 2px solid #7cf;
+                border-radius: 6px;
+                font-weight: bold;
+                text-decoration: none;
+                transition: transform 0.2s, background-color 0.2s, color 0.2s;
+            }
+
+                .resume-button:hover {
+                    transform: scale(1.05);
+                    background-color: #7cf;
+                    color: #111;
+                }
     </style>
 </head>
 <body>
@@ -180,7 +187,7 @@
             </div>
 
             <div class="header-icons">
-                <a href="mailto:ewout.vangasse@hotmail.com" title="Email">
+                <a href="mailto:ewout.vangasse@hotmail.com" class="mail" title="Email">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M2 4v16h20V4H2zm18 2v.511l-8 5.333-8-5.333V6h16zM4 18V8.489l8 5.333 8-5.333V18H4z" />
                     </svg>
