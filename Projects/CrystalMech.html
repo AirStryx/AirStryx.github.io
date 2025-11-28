@@ -160,6 +160,39 @@
                 color: #cfe6ff;
             }
 
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+            }
+
+            .header-left {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .header-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .header-icons {
+                flex-wrap: wrap;
+                gap: 10px;
+                margin: 10px 0;
+            }
+
+            .back-button {
+                align-self: center;
+                padding: 8px 16px;
+                width: auto;
+                text-align: center;
+                max-width: 200px;
+            }
+        }
+
     </style>
 </head>
 <body>
