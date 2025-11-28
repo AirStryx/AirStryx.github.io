@@ -96,24 +96,20 @@
         }
 
 
-            .projects-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-                justify-items: center;
-                padding: 20px 0;
-            }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
 
-            .project-card img {
-                width: 500px;
-                height: 280px;
-                object-fit: cover;
-                object-position: top center;
-                border-radius: 12px;
-                cursor: pointer;
-                display: block;
-                transition: transform 0.2s;
-            }
+        .project-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+            object-position: top;
+        }
 
                 .project-card img:hover {
                     transform: scale(1.03);
@@ -123,8 +119,6 @@
             {
                 .projects-container {
                     grid-template-columns: 1fr;
-                    width: 100vw;
-                    padding: 0 10px;
                 }
             }
 
@@ -231,8 +225,8 @@
 
         <h2 class="personal-section">Personal, School, Gamejam Projects</h2>
 
-        <div class="Projects-container">
-            <a href="projects/CrystalMech.html" class="project-card">
+        <div class="projects-container">
+            <a href="Projects/CrystalMech.html" class="project-card">
                 <img src="Resources/CrystalMech-splash.png" alt="CrystalMech">
             </a>
             <a href="Projects/Inverted.html" class="project-card">
