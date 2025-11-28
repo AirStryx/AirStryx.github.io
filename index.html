@@ -1,38 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GameDev Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #111; color: #eee; }
-    header { background: #222; padding: 20px; text-align: center; }
-    h1 { margin: 0; }
-    .content { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .project { background: #1e1e1e; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
-    img { width: 100%; border-radius: 8px; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ewout Van Gasse</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: #eee;
+        }
+
+        header 
+        {
+            background: #222;
+            padding: 40px 20px;
+        }
+
+        .header-text 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #eee;
+            min-width: 250px;
+        }
+        .header-container 
+        {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .profile-pic 
+        {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+
+        .header-text 
+        {
+            flex: 1;
+            color: #eee;
+            min-width: 250px;
+        }
+
+        h1 
+        {
+            margin: 0;
+        }
+
+        .about 
+        {
+            margin-top: 15px;
+            color: #ccc;
+            max-width: 800px;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        .content 
+        {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .project 
+        {
+            background: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        img 
+        {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .role 
+        {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: #bbb;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        .project-card img {
+            width: 500px;
+            height: 280px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 12px;
+            cursor: pointer;
+            display: block;
+            transition: transform 0.2s;
+        }
+
+            .project-card img:hover {
+                transform: scale(1.03);
+            }
+
+        @media (max-width: 650px) {
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        h2.personal-section {
+            margin-top: 80px; /* increase this value for more space */
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px 20px;
+        }
+
+        .header-icons {
+            margin: 15px 0;
+            display: flex;
+            gap: 20px;
+        }
+
+            .header-icons a {
+                color: #7cf;
+                transition: transform 0.2s;
+                display: inline-block;
+            }
+
+                .header-icons a:hover {
+                    transform: scale(1.2);
+                }
+        .resume-button {
+            background-color: transparent;
+            color: #7cf;
+            padding: 6px 14px;
+            border: 2px solid #7cf;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s, color 0.2s;
+        }
+
+        .resume-button:hover {
+            transform: scale(1.05);
+            background-color: #7cf;
+            color: #111;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>My GameDev Portfolio</h1>
-    <p>Gameplay Programmer • Unity • Unreal • Game Jams</p>
-  </header>
 
-  <div class="content">
+    <header>
+        <div class="header-container">
+            <img src="Resources/me.png" alt="My photo" class="profile-pic">
 
-    <h2>Projects</h2>
+            <div class="header-text">
+                <h1>Ewout Van Gasse</h1>
+                <h2 class="role">Senior Unity Developer</h2>
+            </div>
 
-    <div class="project">
-      <h3>Game Title</h3>
-      <img src="screenshot.png" alt="Screenshot">
-      <p>Description of the game, what you contributed, tools used…</p>
-      <p><a href="https://link-to-play.com" style="color:#7cf;">Play</a> |
-         <a href="https://github.com/yourname/project" style="color:#7cf;">Source</a></p>
+            <div class="header-icons">
+                <a href="mailto:ewout.vangasse@hotmail.com" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2 4v16h20V4H2zm18 2v.511l-8 5.333-8-5.333V6h16zM4 18V8.489l8 5.333 8-5.333V18H4z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ewout-van-gasse/" target="_blank" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.02 8.99h4.96V24H.02V8.99zM8.93 8.99h4.76v2.04h.07c.66-1.25 2.27-2.57 4.66-2.57 4.98 0 5.9 3.28 5.9 7.54V24h-4.96v-7.84c0-1.87-.03-4.28-2.6-4.28-2.6 0-3 2.04-3 4.14V24H8.93V8.99z" />
+                    </svg>
+                </a>
+                <a href="Resources/resume.pdf" class="resume-button" target="_blank">Resume</a>
+            </div>
+
+
+
+            <div class="about">
+                A <span id="age"></span>-year-old Senior Unity Developer, from Belgium, experienced in crafting immersive VR multiplayer experiences for multiple platforms.
+                I’m dedicated to clean architecture, optimized performance, and interested in security-minded practices such as anti-cheat and anti–file tampering.
+                Always willing to learn new things.
+
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <h2>Professional Projects</h2>
+
+        <div class="projects-container">
+            <a href="projects/Forefront.html" class="project-card">
+                <img src="Resources/Forefront-splash.png" alt="Forefront">
+            </a>
+            <a href="projects/Breachers.html" class="project-card">
+                <img src="Resources/Breachers-splash.png" alt="Breachers">
+            </a>
+            <a href="projects/Hyperdash.html" class="project-card">
+                <img src="Resources/Hyperdash-splash.png" alt="Hyperdash">
+            </a>
+        </div>
+
+        <h2 class="personal-section">Personal, School, Gamejam Projects</h2>
+
+        <div class="projects-container">
+            <a href="projects/CrystalMech.html" class="project-card">
+                <img src="Resources/CrystalMech-splash.png" alt="CrystalMech">
+            </a>
+            <a href="projects/Inverted.html" class="project-card">
+                <img src="Resources/Inverted-splash.png" alt="Inverted">
+            </a>
+        </div>
+
     </div>
-
-    <!-- Copy this block for more projects -->
-
-  </div>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Ewout Van Gasse</p>
+        </div>
+    </footer>
+    <script>
+        const birthDate = new Date("1997-06-16");
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+        }
+        document.getElementById("age").textContent = age;
+    </script>
 </body>
 </html>
