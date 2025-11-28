@@ -152,6 +152,39 @@
             text-align: center;
             padding: 15px 20px;
         }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+            }
+
+            .header-left {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .header-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .header-icons {
+                flex-wrap: wrap;
+                gap: 10px;
+                margin: 10px 0;
+            }
+
+            .back-button {
+                align-self: center;
+                margin-top: 15px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
     </style>
 </head>
 <body>
