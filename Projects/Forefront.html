@@ -45,6 +45,12 @@
             font-size: 1.1rem;
             color: #7cf;
         }
+        .name-link {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: inherit;
+            text-decoration: none;
+        }
 
         .header-icons {
             margin: 15px 0;
@@ -192,7 +198,9 @@
         <div class="header-left">
             <img src="../Resources/me.png" alt="Ewout Van Gasse" class="profile-pic">
             <div class="header-text">
-                <h1>Ewout Van Gasse</h1>
+                <a href="../index.html" class="name-link">
+                    Ewout Van Gasse
+                </a>
             </div>
             <div class="header-icons">
                 <a href="mailto:ewout.vangasse@hotmail.com" class="mail" title="Email">
@@ -237,14 +245,14 @@
                     <strong>Prototype:</strong>
                     <ul>
                         <li>Implementing and testing new gameplay ideas, closely working with the designers whilst iterating and improving these features, according to feedback.</li>
-                        <li>Work on a system that closely resembles the unity ECS system. This allowed us to control the order of execution of everything in the game and allowed us to optimize a lot of basic functionality. This was later expanded in production and used in the final product.</li>
+                        <li>Work on a system that closely resembles the <b>Unity ECS system</b>. This allowed us to <b>control the order of execution</b> of everything in the game and allowed us to <b>optimize</b> a lot of basic functionality. This was later expanded in production and used in the final product.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Production:</strong>
                     <ul>
-                        <li>Work on the first version of the bots, using the unity jobs system to update their vision in an optimized way, even more optimized by using spatial hashing to filter out unneeded calculations</li>
-                        <li>Lead development on anything weapons related, from base posing and handling to supporting unique reloads while still using 1 generalized system and flow. Supporting multiple attachments per gun easily set up with a 1 click editor tool. This is all networked in an optimized way so it still functions when 32 players are present in the server</li>
+                        <li>Work on the first version of the bots, using the <b>unity jobs system</b> to update their vision in an <b>optimized</b> way, even more optimized by using <b>spatial hashing</b> to filter out unneeded calculations</li>
+                        <li><b>Lead development</b> on anything weapons related, from base posing and handling to supporting unique reloads while still using <b>1 generalized system</b> and flow. Supporting multiple attachments per gun easily set up with a <b>1 click editor tool</b>. This is all networked in an <b>optimized</b> way so it still functions when 32 players are present in the server</li>
                         <li>Easy-Anticheat Implementation</li>
                         <li>General gameplay programming implementations of new features.</li>
                     </ul>

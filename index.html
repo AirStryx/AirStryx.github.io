@@ -102,9 +102,32 @@
             gap: 20px;
         }
 
+        .project-card {
+            position: relative;
+        }
+
+        .project-labels {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            gap: 6px;
+        }
+
+            .project-labels .label {
+                background-color: rgba(0, 0, 0, 0.65);
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                color: #fff;
+                font-weight: 600;
+                white-space: nowrap;
+                pointer-events: none;
+            }
+
         .project-card img {
             width: 100%;
-            height: 280px;
+            aspect-ratio: 16 / 9;
             object-fit: cover;
             display: block;
             border-radius: 8px;
@@ -199,7 +222,7 @@
 
 
             <div class="about">
-                A <span id="age"></span>-year-old Senior Unity Developer, from Belgium, experienced in crafting immersive VR multiplayer experiences for multiple platforms.
+                A Senior Unity Developer with <span id="age"></span>+ years of industry experience, from Belgium, experienced in crafting immersive VR multiplayer experiences for multiple platforms.
                 I’m dedicated to clean architecture, optimized performance, and interested in security-minded practices such as anti-cheat and anti–file tampering.
                 Always willing to learn new things.
 
@@ -214,12 +237,37 @@
         <div class="projects-container">
             <a href="Projects/Forefront.html" class="project-card">
                 <img src="Resources/Forefront-splash.png" alt="Forefront">
+                <div class="project-labels">
+                    <span class="label">Unity C#</span>
+                    <span class="label">VR</span>
+                    <span class="label">Photon Fusion 2</span>
+                </div>
             </a>
             <a href="Projects/Breachers.html" class="project-card">
                 <img src="Resources/Breachers-splash.png" alt="Breachers">
+                <div class="project-labels">
+                    <span class="label">Unity C#</span>
+                    <span class="label">VR</span>
+                    <span class="label">Photon Fusion</span>
+                </div>
             </a>
             <a href="Projects/Hyperdash.html" class="project-card">
                 <img src="Resources/Hyperdash-splash.png" alt="Hyperdash">
+                <div class="project-labels">
+                    <span class="label">Unity C#</span>
+                    <span class="label">VR</span>
+                    <span class="label">Prototyping</span>
+                    <span class="label">Photon Pun</span>
+                </div>
+            </a>
+            <a href="Projects/B2B.html" class="project-card">
+                <img src="Resources/B2B.gif" alt="B2B">
+                <div class="project-labels">
+                    <span class="label">Unity C#</span>
+                    <span class="label">VR</span>
+                    <span class="label">B2B Projects</span>
+                    <span class="label">Mirror Networking</span>
+                </div>
             </a>
         </div>
 
@@ -228,9 +276,17 @@
         <div class="projects-container">
             <a href="Projects/CrystalMech.html" class="project-card">
                 <img src="Resources/CrystalMech-splash.png" alt="CrystalMech">
+                <div class="project-labels">
+                    <span class="label">Unreal Blueprinting</span>
+                    <span class="label">Gamejam</span>
+                </div>
             </a>
             <a href="Projects/Inverted.html" class="project-card">
                 <img src="Resources/Inverted-splash.png" alt="Inverted">
+                <div class="project-labels">
+                    <span class="label">Unity C#</span>
+                    <span class="label">Group project</span>
+                </div>
             </a>
         </div>
 
@@ -241,7 +297,7 @@
         </div>
     </footer>
     <script>
-        const birthDate = new Date("1997-06-16");
+        const birthDate = new Date("2019-07-01");
         const today = new Date();
         let age = today.getFullYear() - birthDate.getFullYear();
         const monthDiff = today.getMonth() - birthDate.getMonth();
